@@ -51,7 +51,8 @@ public class Driver {
                     WebDriverManager.chromedriver().setup();
 
                     ChromeOptions options = new ChromeOptions();
-                    //width, height
+                    //width, height   // bazi zamanlar ekran kucuk kaldigi icin sekme gorunmeyince tiklamiyor
+                                      // bu kodu oyle bir sorun olmamasi icin yazdik.
                     options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage", "--disable-gpu", "--window-size=1400,2400");
 
                     threadDriver.set( new ChromeDriver(options) );
