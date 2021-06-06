@@ -5,7 +5,7 @@ Feature: Students functionality
     When Enter username and password and click Login button
     Then User should login successfully
 
-  @RegressionTest
+
   Scenario: Create entrance exam
 
     And Click on the element in the left class
