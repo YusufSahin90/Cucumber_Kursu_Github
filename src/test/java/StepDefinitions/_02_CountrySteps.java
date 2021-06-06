@@ -4,6 +4,7 @@ import Pages.DialogContent;
 import Pages.LeftNav;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.apache.commons.lang3.RandomStringUtils;
 
 public class _02_CountrySteps {
 
@@ -21,9 +22,12 @@ public class _02_CountrySteps {
     @When("^Create a country$")
     public void create_a_country()  {
 
+        String randomGenName = RandomStringUtils.randomAlphabetic(8);
+        String randomGenCode = RandomStringUtils.randomAlphabetic(4);
+
         dialogContent.findElementAndClickFunction("addButton");
-        dialogContent.findElementAndSendKeysFunction("nameInput", "ismetUlkesi6");
-        dialogContent.findElementAndSendKeysFunction("codeInput", "092456");
+        dialogContent.findElementAndSendKeysFunction("nameInput", randomGenName);
+        dialogContent.findElementAndSendKeysFunction("codeInput", randomGenCode);
         dialogContent.findElementAndClickFunction("saveButton");
 
     }
