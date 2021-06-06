@@ -24,6 +24,7 @@ public class _06_NationalitiesSteps {
         dialogContent.findElementAndClickFunction("addButton");
         dialogContent.findElementAndSendKeysFunction("nameInput", name);
         dialogContent.findElementAndClickFunction("saveButton");
+
     }
 
 }

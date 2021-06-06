@@ -20,7 +20,7 @@ public class _01_LoginSteps {
         driver.get("https://test.basqar.techno.study/");
         driver.manage().window().maximize();
         driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
     }
 
     @When("^Enter username and password and click Login button$")
