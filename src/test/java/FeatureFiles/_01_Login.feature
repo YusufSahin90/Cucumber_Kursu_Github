@@ -6,7 +6,7 @@
 Feature: Login Functionality
 
   #username ve password girerek login doğrulama
-  @RegressionTest
+  @SmokeTest
   Scenario: Login with valid username and password
 
     #siteyi aç - basgara a git
